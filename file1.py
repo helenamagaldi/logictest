@@ -1,12 +1,12 @@
 
 def media():
-    n1 = eval(input('Informe a nota 1:'))
-    n2 = eval(input('Informe a nota 2:'))
+    n1 = eval(input('N1'))
+    n2 = eval(input('N2'))
 
     media = (n1+n2/2)
     if(media >6):
-        return print("aprovado")
+        return print("approved")
     else:
-        return print("reprovado")
+        return print("failed")
 
         # media() 
