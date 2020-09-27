@@ -1,2 +1,1 @@
-# logictest
-tests - python
+# Final test for Programming Logic course - IESB
