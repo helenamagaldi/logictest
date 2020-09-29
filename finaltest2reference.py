@@ -38,4 +38,24 @@ print('\n------ CADASTRO DE FILMES/TÍTULOS ------\n') cadastro = {}
 
     filmes_csv = open("filmes.csv, "a")
     filmes_csv.write(f"{codigo};{tipo};{nome_filme};{ano_lancamento}\n)
+    filmes_csv.close()
 
+# listing all movies 
+def listar_filmes():
+    print('\n----- Lista de filmes -----\n')
+    filmes_csv = open("filmes.csv")
+    dados = csv.DictReader(filmes_csv, delimiter = ';')
+
+    print(f'{CODIGO}:10', f'{TIPO}:10)', f'{"NOME DO FILME":30} , "ANO")
+    for filme in dados:
+            print(f'{filme["codigo"]:10', f'{filme["nome_filme"]:30}', filme["ano_lancamento])
+    filmes_csv.close()
+
+
+# movies 
+def realizar_emprestimo():
+    print('\n --- EMPRÉSTIMOS ---\n')
+    cadastro = {}
+    nome_usuario = input("Nome do cliente....: ")
+    codigo_filme = input("Código do filme....: ")
+    data_emprestimo = input("Data de empréstimo(dd/mm/aaaa)...: ")
