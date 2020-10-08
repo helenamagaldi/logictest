@@ -59,3 +59,6 @@ def realizar_emprestimo():
     nome_usuario = input("Nome do cliente....: ")
     codigo_filme = input("Código do filme....: ")
     data_emprestimo = input("Data de empréstimo(dd/mm/aaaa)...: ")
+
+    cadastro = {'nome_usuario': nome_usuario,'codigo_filme': codigo_filme, 'data_emprestimo': data_emprestimo}
+    
